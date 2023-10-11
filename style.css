@@ -186,11 +186,11 @@ section {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #74CEB7;
-    color: #fff;
+    color: #084220;
     text-align: center;
     padding: 20px 0;
 }
@@ -211,14 +211,14 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #084220;
     font-size: 20px;
 }
 
 footer p {
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #084220;
     font-size: 20px;
 }
 
