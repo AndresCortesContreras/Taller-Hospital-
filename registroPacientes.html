@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Pacientes</title>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="wrapper">
+            <div class="titulo-principal">
+                <!-- <h1>Centro Medico Bogota</h1> -->
+            </div>
+            <div class="logo"><img src="Imagenes/clinica.png" width="60%"></div>
+            <nav>
+                <ul class="nav">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Medicos</a>
+                <ul>
+                    <li><a href="medicosRegistros.html">Registro medicos</a></li>
+                    <li><a href="listadoMedicos.html">Listado Medicos </a></li>
+                </ul></li>
+                <li><a>Pacientes</a>
+                     <ul>
+                        <li><a href="registroPacientes.html">Registro Pacientes</a></li>
+                        <li><a href="listadoPacientes.html">Listado Pacientes</a></li>
+                        </ul></li>
+
+                <li><a href="http://">Contacto</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="titulo-principal">
+        <h2>Registro Pacientes</h2></div><br>
+        
+            <form id="registroPacientes">
+                <label for="">Nombres *</label>
+                <input type="text" placeholder="Nombres" required id="nombres">
+                <label for="">Apellidos *</label>
+                <input type="text" placeholder="Apellidos" required id="apellidos"><br>
+                <label for="">N. Documento *</label>
+                <input type="number" placeholder="Cedula" required id="documento"><br>
+                <label for="">Edad *</label>
+                <input type="number" required placeholder="Edad" id="edad">
+                <label for="">Telefono *</label>
+                <input type="number" placeholder="Telefono" required id="telefono">
+                <label for="">Correo *</label>
+                <input type="email" placeholder="Correo electronico" required id="correo"><br>
+                <label for="">Especialidad Requerida *</label>
+                <select name="especialidad_pacientes" id="especialidad">
+                    <option value="Medicina general">Medicina general.</option>
+                    <option value="Cardiología">Cardiología.</option>
+                    <option value="Medicina interna">Medicina interna.</option>
+                    <option value="Dermatología">Dermatología.</option>
+                    <option value="Rehabilitación física">Rehabilitación física.</option>
+                    <option value="Psicología">Psicología.</option>
+                    <option value="Odontología">Odontología.</option>
+                    <option value="Radiología">Radiología.</option>
+                </select><br>
+                <label for="">Acepta terminos y condiciones *</label>
+                <input type="checkbox" required id="terminos"><br><br>
+                <p>Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de privacidad y la Política
+                    de cookies.
+                    Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.</p>
+                    <span><input type="submit" class="botonEnvio" id="boton"></span>
+                    <span><a href="index.html"><input type="button" class="botonVolver" value="Volver"></a></span>
+            </form>
+        </section>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/tu_perfil" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.twitter.com/tu_perfil" target="_blank">Twitter</a></li>
+            <li><a href="https://www.github.com/tu_perfil" target="_blank">GitHub</a></li>
+        </ul>
+        <p>Realizado por Andres Cortes estudiante de Back end</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Pacientes</title>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="wrapper">
+            <div class="titulo-principal">
+                <!-- <h1>Centro Medico Bogota</h1> -->
+            </div>
+            <div class="logo"><img src="Imagenes/clinica.png" width="60%"></div>
+            <nav>
+                <ul class="nav">
+
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a>Medicos</a>
+                        <ul>
+                            <li><a href="medicosRegistros.html">Registro medicos</a></li>
+                            <li><a href="listadoMedicos.html">Listado Medicos </a></li>
+                        </ul>
+                    </li>
+                    <li><a>Pacientes</a>
+                        <ul>
+                            <li><a href="registroPacientes.html">Registro Pacientes</a></li>
+                            <li><a href="listadoPacientes.html">Listado Pacientes</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="http://">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenido">
+        <h1>Pacientes registrados en el sistema</h1>
+        <label for="">Ingrese el N.Documento del paciente</label>
+        <input type="number" required><br><br>
+        <input type="submit"><br><br>
+
+        <table border="Solid">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellidos</td>
+                    <td>Numero Cedula</td>
+                    <td>Edad</td>
+                    <td>Telefono</td>
+                    <td>Correo</td>
+                    <td>Especialidad</td>
+                    <td>Medico</td>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-pacientes">
+                <tr>
+                    <td>Andres</td>
+                    <td>Cortes</td>
+                    <td>1023252363</td>
+                    <td>28</td>
+                    <td>3214568978</td>
+                    <td>Andres@paciente.com</td>
+                    <td>Cardiologia</td>
+                    <td>Carolina Acevedo</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <span><a href="index.html"><input type="button" class="botonVolver" value="Volver"></a></span>
+
+
+    </section>
+    <footer>
+        <h2>Redes Sociales</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/tu_perfil" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.twitter.com/tu_perfil" target="_blank">Twitter</a></li>
+            <li><a href="https://www.github.com/tu_perfil" target="_blank">GitHub</a></li>
+        </ul>
+        <script src="app.js"></script>
+    </footer>
+</body>
+
+</html>
